@@ -13,11 +13,8 @@ class School
     if @roster[grade] = []
       @roster[grade] << student
       @roster
-    elsif @roster[grade] = new
-      grade.each do |student|
-        @roster << grade[student]
-      end
-      @roster
+    else
+      @roster[grade] = [student]
     end
   end
 
