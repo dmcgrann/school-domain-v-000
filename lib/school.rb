@@ -4,7 +4,7 @@ class School
   def initialize(name)
     @name = name
     name.each do |k,v|
-      roster{k: v}
+      roster = {k: v}
     end
   end
 
