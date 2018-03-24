@@ -14,7 +14,7 @@ class School
       @roster[grade] << student
       @roster
     elsif @roster[grade] = new
-      @roster << grade[student]
+      @roster << grade["#{student}"]
       @roster
     end
   end
