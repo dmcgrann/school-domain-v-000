@@ -5,6 +5,7 @@ class School
     @name = name
     name.each do |k,v|
       roster{k: v}
+    end
   end
 
 
