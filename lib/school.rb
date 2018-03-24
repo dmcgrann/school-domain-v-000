@@ -14,7 +14,9 @@ class School
       @roster[grade] << student
       @roster
     elsif @roster[grade] = new
-      @roster << "#{grade}"["#{student}"]
+      grade.each do |student|
+        @roster << grade[student]
+      end
       @roster
     end
   end
