@@ -12,7 +12,7 @@ class School
   end
 
   def add_student(student)
-    student.each {|k,v| roster << k}
+    student.each {|k| roster << k}
   end
 
 end
