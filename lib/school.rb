@@ -10,7 +10,7 @@ class School
   end
 
   def add_student(name, grade)
-    @roster << grade[name]
+    @roster << grade.to_i[name]
   end
 
 end
